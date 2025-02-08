@@ -6,9 +6,9 @@ import matplotlib.dates as mdates
 import numpy as np
 
 # Set up basic information
-siteName = "Fresno CA USA"
+siteName = "Sacramento CA USA"
 SampleRate = "1h"
-st.header = "Fresno AOD"
+st.header = "Sacramento AOD"
 StartDate = st.date_input("StartDate", datetime.date(2024, 1, 1))
 StartDateTime = datetime.datetime.combine(StartDate, datetime.time(0, 0))
 EndDate = st.date_input("EndDate", datetime.date(2024, 1, 7))
@@ -192,7 +192,7 @@ except:
 
 # Initializing main Axis and plot
 fig.autofmt_xdate() ## Note: With multiple plots, this removes the x-axis identifiers for plots not in the bottom row
-ax.set_title('Fresno AOD Fresno Wind Speed, and Temperature ')
+ax.set_title('Sacramento AOD Fresno Wind Speed, and Temperature ')
 ax.grid(which='both',axis='both')
 ax.xaxis.set_major_locator(mdates.DayLocator(interval=1, tz='US/Pacific'))
 ax.xaxis.set_minor_locator(mdates.HourLocator(interval=3, tz='US/Pacific'))
