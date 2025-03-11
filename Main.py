@@ -73,7 +73,7 @@ if df_1 is not None:
         user_matches = {}
         for pos in positions:
             user_matches[pos] = st.selectbox(f"What Wavelength will have the {pos} measurment on the graph?", 
-                                             options=["Select an option", "400 nm", "500 nm", "675 nm"], 
+                                             options=["Select an option", "412 nm", "532 nm", "667 nm"], 
                                              key=pos)
 
         # Once the user submits, show the second graph (same as the first)
